@@ -110,7 +110,6 @@ int main() {
                                
                                 switch(bian){
                                     case 1:
-                                        cout<<"aa"<<endl;
                                         slist.sort_jichu(stup);
                                         slist.display();
                                         cout<<"请输入任意数字返回："<<endl;

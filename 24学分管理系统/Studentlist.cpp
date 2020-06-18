@@ -178,9 +178,7 @@ void Studentlist::sort_zhuanye(Student* &head ){
     for(Student* temp=head->next;temp->next!=NULL;temp=temp->next)
     for(Student* p1=head->next;p1->next!=NULL;p1=p1->next)
         if(p1->zhuanye<p1->next->zhuanye){
-            int t=p1->jichu;
-            p1->zhuanye=p1->next->zhuanye;
-            p1->next->zhuanye=t;
+            swap(p1,p1->next);
         }
 }
 
